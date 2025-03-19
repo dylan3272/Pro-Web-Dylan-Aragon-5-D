@@ -1,0 +1,38 @@
+/*comentarios*/
+
+/*selectores*/
+
+/*Etiquetas*/
+/*modificamos directamenta la etiqueta a la cual estamos apuntando */
+p{
+    color: blue;
+}
+
+/*clases*/
+.button-custom{
+    color: firebrick;
+}
+/*ID*/
+
+#titulo{
+    color: bisque;
+}
+.contenedor{
+    color: black;/*modifica el color de la letra*/
+    background-color: blue;/*color del fondo */
+    font-size: 20px;/*tamaño de la letra*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    text-align: center;/*alineacion del texto*/
+    border: 2px solid black;/*ancho de la linea */
+    border-radius: 10px;/*redondea los bordes*/
+    width: 400px;/*ancho ej: de un cartel*/
+    height: 200px;/*alto ej: de un cartel*/
+
+}
+.button-div{
+ padding: 10px;/*distancia desde el elemento hasta los botones*/
+ margin: 10px;/* distancia desde los bordes hacia fuera*/
+}
+.contenedor-flexible{
+    display: flex;/* */
+}

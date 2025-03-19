@@ -1,0 +1,67 @@
+
+
+.contenedor
+{
+    color: rgb(255, 255, 255);/*modifica el color de la letra*/
+    background-color: rgb(34, 45, 71);/*color del fondo */
+    font-size: 13px;/*tamaño de la letra*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    text-align: center  ;/*alineacion del texto*/
+    border : 10px solid rgb(0, 0, 0);/*ancho de la linea */
+    width: 350px;/*ancho ej: de un cartel*/
+    height: 150px;/*alto ej: de un cartel*/
+    border-radius: 20px;
+}
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+}
+.contenedor img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: -10px;
+}
+p {
+    margin: 3px;
+}
+.text p:first-child {
+    font-weight:bolder;
+}
+.texto 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.centrar 
+{
+
+    text-align: center;    
+    margin-top: -2px;
+    margin-right: -15px;
+    font-weight: bolder ;
+
+}
+.conectado 
+{
+    margin-top: 15px;/*acerca a la imagen el texto "conectado"*/
+    margin-bottom: -5px;
+}
+.ubicacion {
+    font-size: medium;
+    color: gray;
+}
+.LOCATION { 
+    text-align: center; 
+    font-size: smaller;
+    color: rgb(231, 46, 0);
+}
+.ultima vez { 
+    text-align: left; 
+    font-size: smaller;
+    color: rgb(228, 228, 228);
+}
+.lugar { 
+    text-align: left; 
+    font-size: small;
+    color: rgb(243, 96, 11);
+}
