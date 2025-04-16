@@ -1,0 +1,68 @@
+body {
+    background-image: url(https://wallpapers.com/images/hd/pokemon-black-999g52sd12uq4y1n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Borde con imagen decorativa */
+.imagen-con-borde {
+    padding: 10px;
+    border: 20px solid transparent;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.imagen-con-borde h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .grilla {
+        grid-template-columns: 1fr;
+    }
+}
