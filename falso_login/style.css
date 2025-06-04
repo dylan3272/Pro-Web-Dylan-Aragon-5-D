@@ -1,0 +1,90 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+  background-color: #2ad19f;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor del login */
+.login-container {
+  background-color: #6375c5;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21618c;
+}
+
+/* Enlaces debajo del formulario */
+.links a {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de volver */
+.boton_de_vuelta {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Contenedor empleados, oculto por defecto */
+#empleados {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  color: #333;
+}
+
+/* Tarjetas de empleados */
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
