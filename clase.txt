@@ -1,0 +1,47 @@
+
+Aprenderás
+
+    Cómo crear y anidar componentes
+    Cómo añadir marcado y estilos
+    Cómo mostrar datos
+    Cómo renderizar condicionales y listas
+    Cómo responder a eventos y actualizar la pantalla
+    Cómo compartir datos entre componentes
+
+
+Los componentes cuando se declaran siempre arrancan con mayusculas y retornan la estetica 
+
+
+
+
+function MyButton() {
+  return (
+    <button>Soy un botón</button>
+  );
+}
+
+estos archivos ahora tendran una nueva extencion que es jsx
+
+
+vamos a encontrar toda la info del proyecto y levantarlo
+
+dependecia son la funcionalidades que nosotros instalamos para desarroyar la pagina
+
+dependecia de desarroyo nos ayuda a los programadores para desarroyar la pagina 
+
+El index no se porque rompe la pagina y el main tampoco
+
+eslint.config .js 
+se encarga de darnos errores
+
+Git.ignore:
+Ignora todo lo qye no queremos que se suba 
+
+
+el css generico o basico se importa en main:
+import 'Nombre del Archivo'
+
+
+los props son valores 
+
+useState Guarda valores em una variable y actualizar esa variable 
