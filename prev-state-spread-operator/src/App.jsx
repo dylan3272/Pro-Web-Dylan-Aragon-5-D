@@ -1,35 +1,55 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [num, setNum] = useState([1,2,3,4]) //puede tener array y diccionarios
-  //nombre de la variable
-  const [persona, setPersona] = useState({nombre: "Pepito",edad: 30})
-  // Spread operator
-  function myfunction(){
+  const [num, setNum] = useState([1, 2, 3, 4]) 
+  const [persona, setPersona] = useState({ nombre: "Pepito", edad: 30 }) 
+
+  // Se ejecuta cuando persona cambia
+  useEffect(() => {
+    console.log("Persona actual:", persona)
+  }, [persona])
+
+  // Agrega un número a la lista
+  function myfunction() {
     const ultimoNum = num[num.length - 1]
     setNum([...num, ultimoNum + 1])
-    // console.log(num.length);
-    
   };
-  function Persona(){
-    const nuevoObjeto = {...persona,nombre:"Luis", apellido: "Jose"}
-    console.log(nuevoObjeto);
-    
+
+  // Botones de persona
+  function mostrarPersona() {
+    console.log("Persona actual:", persona)
   }
-  // tarea hacer que el setNum agregue numeros consecutivos ->3
-  
-  // tarea Agregar una propiedad al objeto persona usando spread operator->4
-  //opcional +3 puntos
-  //Partiendo de {nombre: "Pepito", edad: 30}, cambia solo nombre a "Luis usando el spread"
+
+  function cambiarNombre() {
+    setPersona((prevPersona) => {
+      const nuevoNombre = prevPersona.nombre === "Pepito" ? "Luis" : "Pepito"
+      return { ...prevPersona, nombre: nuevoNombre }
+    })
+  }
+
+  function cambiarApellido() {
+    setPersona((prevPersona) => {
+      const nuevoApellido = prevPersona.apellido === "Gómez" ? "José" : "Gómez"
+      return { ...prevPersona, apellido: nuevoApellido }
+    })
+  }
+
   return (
     <>
       <div>
-        {num.map((item, index)=>(
-          <p>{item}</p>
+        {/* Lista de números */}
+        {num.map((item) => (
+          <p key={item}>{item}</p>
         ))}
+
         <button onClick={myfunction}>Agregar numero</button>
-        <button onClick={Persona}>Mostrar en consola</button>
+
+        {/* Sección de personas */}
+        <h2>Personas</h2>
+        <button onClick={mostrarPersona}>Mostrar en consola</button>
+        <button onClick={cambiarNombre}>Cambiar Nombre</button>
+        <button onClick={cambiarApellido}>Agregar Apellido</button>
       </div>
     </>
   )
